@@ -11,4 +11,9 @@ export default Backbone.Model.extend({
       this.set('created', Date.now());
     }
   },
+  update: function(title) {
+    this.set('title', title);
+    this.set('created', Date.now());
+  },
+
 });

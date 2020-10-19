@@ -13,9 +13,6 @@ export default Marionette.View.extend({
     'keypress @ui.title': 'onInputKeypress',
     'keyup @ui.title': 'onInputKeyup',
   },
-  collectionEvents: {
-    all: 'render'
-  },
   onInputKeyup(e) {
     const ESC_KEY = 27;
     if (e.which === ESC_KEY) {
